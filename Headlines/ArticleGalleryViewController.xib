@@ -5,8 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleGalleryViewController">
             <connections>
+                <outlet property="favouritesButton" destination="2or-EN-yRM" id="pAj-pf-D8R"/>
+                <outlet property="starButton" destination="4NE-0v-oqC" id="0TQ-Nz-GfZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="B83-Tr-zEs"/>
             </connections>
         </placeholder>
@@ -23,10 +25,13 @@
                                 <rect key="frame" x="16" y="10" width="26" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="favourite-off"/>
+                                <connections>
+                                    <action selector="bounceStarButtonIn" destination="-1" eventType="touchDown" id="W5K-R0-kqz"/>
+                                    <action selector="bounceStarButtonUp" destination="-1" eventType="touchCancel" id="5YH-lD-291"/>
+                                    <action selector="bounceStarButtonUp" destination="-1" eventType="touchUpOutside" id="F9M-w3-CmI"/>
+                                    <action selector="starButtonPressed" destination="-1" eventType="touchUpInside" id="iTP-Th-jW4"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="starButtonPressed" destination="-1" id="HBs-An-kqY"/>
-                            </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Z00-Kh-1SA"/>
                         <barButtonItem title="Favourites" id="2or-EN-yRM">

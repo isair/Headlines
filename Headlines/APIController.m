@@ -7,7 +7,9 @@
 //
 
 #import "APIController.h"
+#import "AppDelegate.h"
 #import <ISO8601/ISO8601.h>
+#import <MagicalRecord/MagicalRecord.h>
 
 NSString *const kAPIKey = @"enj8pstqu5yat6yesfsdmd39";
 
@@ -43,7 +45,8 @@ NSString *const kAPIKey = @"enj8pstqu5yat6yesfsdmd39";
             NSMutableArray *array = [[NSMutableArray alloc] init];
             
             for (NSDictionary *result in dictionary[@"response"][@"results"]) {
-                Article *article = [[Article alloc] init];
+                Article *article = [Article MR_createEntityInContext:nil];
+                article.identifier = result[@"id"];
                 article.headline = result[@"webTitle"];
                 article.body = [self stringByStrippingTagsFromString:result[@"fields"][@"body"]];
                 article.publishDate = [NSDate dateWithISO8601String:result[@"webPublicationDate"]];

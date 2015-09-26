@@ -7,12 +7,21 @@
 //
 
 @import UIKit;
+@import CoreData;
 
-@interface Article : NSObject <NSCopying>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (copy, nonatomic) NSString *headline;
-@property (copy, nonatomic) NSString *body;
-@property (copy, nonatomic) NSDate *publishDate;
-@property (copy, nonatomic) NSURL *imageUrl;
+@interface Article : NSManagedObject <NSCopying>
+
+@property (nullable, copy, nonatomic) NSString *identifier;
+@property (nullable, copy, nonatomic) NSString *headline;
+@property (nullable, copy, nonatomic) NSString *body;
+@property (nullable, copy, nonatomic) NSDate *publishDate;
+@property (nullable, copy, nonatomic) NSString *imageUrlString;
+
+- (void)setImageUrl:(NSURL *)imageUrl;
+- (NSURL *)imageUrl;
 
 @end
+
+NS_ASSUME_NONNULL_END

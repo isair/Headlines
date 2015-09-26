@@ -67,7 +67,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    self.blurredImageView.alpha = MIN(1, ABS(scrollView.contentOffset.y / self.imageView.frame.size.height) * 3);
+    self.blurredImageView.alpha = MIN(1, ABS((scrollView.contentOffset.y + scrollView.contentInset.top) / self.imageView.frame.size.height) * 3);
     [self.view setNeedsUpdateConstraints];
 }
 

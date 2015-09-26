@@ -7,10 +7,7 @@
 //
 
 @import UIKit;
-#import "Article.h"
 
-@interface FavouritesViewController : UIViewController <UITableViewDataSource>
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface FavouritesViewController : UITableViewController
 
 @end
