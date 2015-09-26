@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
@@ -18,29 +19,32 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="led-XJ-Lw0">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="led-XJ-Lw0">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="led-XJ-Lw0" secondAttribute="height" multiplier="320:211" id="G7M-GK-WVz"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIw-up-fty">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIw-up-fty">
                     <rect key="frame" x="8" y="219" width="303" height="294"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k9-bA-Dcc">
-                    <rect key="frame" x="8" y="92" width="303" height="110"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k9-bA-Dcc">
+                    <rect key="frame" x="8" y="183" width="303" height="28"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtZ-KY-NOC">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtZ-KY-NOC">
                     <rect key="frame" x="228" y="530" width="83" height="30"/>
                     <state key="normal" title="Favourites"/>
                     <connections>
                         <action selector="favouritesButtonPressed" destination="-1" eventType="touchUpInside" id="E8C-X7-08L"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-yp-9Nz">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-yp-9Nz">
                     <rect key="frame" x="15" y="532" width="26" height="25"/>
                     <state key="normal" backgroundImage="favourite-off"/>
                     <connections>
@@ -49,6 +53,22 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AIw-up-fty" firstAttribute="top" secondItem="led-XJ-Lw0" secondAttribute="bottom" constant="8" id="1BQ-xf-ocT"/>
+                <constraint firstAttribute="bottom" secondItem="gtZ-KY-NOC" secondAttribute="bottom" constant="8" id="Bol-MJ-Rxy"/>
+                <constraint firstAttribute="trailing" secondItem="gtZ-KY-NOC" secondAttribute="trailing" constant="9" id="C1T-VQ-Usg"/>
+                <constraint firstAttribute="trailing" secondItem="AIw-up-fty" secondAttribute="trailing" constant="9" id="CxL-gy-WuL"/>
+                <constraint firstAttribute="trailing" secondItem="6k9-bA-Dcc" secondAttribute="trailing" constant="9" id="EHQ-kJ-rNf"/>
+                <constraint firstItem="AIw-up-fty" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="EuK-yM-A5e"/>
+                <constraint firstItem="ms2-yp-9Nz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Rd6-Sl-9uH"/>
+                <constraint firstItem="led-XJ-Lw0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="V3q-eD-pKU"/>
+                <constraint firstAttribute="trailing" secondItem="led-XJ-Lw0" secondAttribute="trailing" id="VcR-t0-TNE"/>
+                <constraint firstItem="6k9-bA-Dcc" firstAttribute="bottom" secondItem="led-XJ-Lw0" secondAttribute="bottom" id="hd1-NR-x1t"/>
+                <constraint firstItem="led-XJ-Lw0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m4n-mD-36k"/>
+                <constraint firstAttribute="bottom" secondItem="AIw-up-fty" secondAttribute="bottom" constant="55" id="nLA-eR-4LB"/>
+                <constraint firstAttribute="bottom" secondItem="ms2-yp-9Nz" secondAttribute="bottom" constant="11" id="yAo-5u-nnY"/>
+                <constraint firstItem="6k9-bA-Dcc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="zEb-Ue-edN"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="82" y="86"/>
         </view>
