@@ -1,4 +1,5 @@
 PODS:
+  - FXBlurView (1.6.4)
   - ISO8601 (0.3.0)
   - Masonry (0.6.3)
   - Reachability (3.2)
@@ -7,12 +8,14 @@ PODS:
   - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
+  - FXBlurView
   - ISO8601
   - Masonry
   - Reachability
   - SDWebImage
 
 SPEC CHECKSUMS:
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
