@@ -12,12 +12,14 @@
 		1AED54921BB2EDFA004F6E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AED54911BB2EDFA004F6E8F /* Assets.xcassets */; };
 		1AED54951BB2EDFA004F6E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AED54931BB2EDFA004F6E8F /* LaunchScreen.storyboard */; };
 		1AED549E1BB2EE48004F6E8F /* APIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED549D1BB2EE48004F6E8F /* APIController.m */; settings = {ASSET_TAGS = (); }; };
-		1AED54A21BB2F529004F6E8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED54A01BB2F529004F6E8F /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		1AED54A31BB2F529004F6E8F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AED54A11BB2F529004F6E8F /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1AED54A21BB2F529004F6E8F /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED54A01BB2F529004F6E8F /* ArticleViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1AED54A31BB2F529004F6E8F /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AED54A11BB2F529004F6E8F /* ArticleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1AED54A61BB30DE4004F6E8F /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED54A51BB30DE4004F6E8F /* Article.m */; settings = {ASSET_TAGS = (); }; };
 		1AED54AA1BB3E696004F6E8F /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED54A81BB3E696004F6E8F /* FavouritesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1AED54AB1BB3E696004F6E8F /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AED54A91BB3E696004F6E8F /* FavouritesViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		5F88B90B1BB6AFAD00EF50C4 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F88B90A1BB6AFAD00EF50C4 /* AppConfig.m */; settings = {ASSET_TAGS = (); }; };
+		5F88B9111BB6B67700EF50C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F88B9101BB6B67700EF50C4 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5F88B9131BB6B68E00EF50C4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F88B9121BB6B68E00EF50C4 /* MainViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E8A8468E8A7F0F9E7BB3F552 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AB137714CA2D799AA740C9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +33,9 @@
 		1AED54961BB2EDFA004F6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AED549C1BB2EE48004F6E8F /* APIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIController.h; sourceTree = "<group>"; };
 		1AED549D1BB2EE48004F6E8F /* APIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIController.m; sourceTree = "<group>"; };
-		1AED549F1BB2F529004F6E8F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1AED54A01BB2F529004F6E8F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1AED54A11BB2F529004F6E8F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1AED549F1BB2F529004F6E8F /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		1AED54A01BB2F529004F6E8F /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		1AED54A11BB2F529004F6E8F /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		1AED54A41BB30DE4004F6E8F /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		1AED54A51BB30DE4004F6E8F /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		1AED54A71BB3E696004F6E8F /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
@@ -41,6 +43,9 @@
 		1AED54A91BB3E696004F6E8F /* FavouritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		5F88B9091BB6AFAD00EF50C4 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		5F88B90A1BB6AFAD00EF50C4 /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		5F88B90F1BB6B67700EF50C4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5F88B9101BB6B67700EF50C4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5F88B9121BB6B68E00EF50C4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		84A9181F9322A206BA55608B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C9AB137714CA2D799AA740C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC63081B3FF4D129C6A9475B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,9 +88,12 @@
 				1AED54891BB2EDFA004F6E8F /* AppDelegate.m */,
 				5F88B9091BB6AFAD00EF50C4 /* AppConfig.h */,
 				5F88B90A1BB6AFAD00EF50C4 /* AppConfig.m */,
-				1AED549F1BB2F529004F6E8F /* ViewController.h */,
-				1AED54A01BB2F529004F6E8F /* ViewController.m */,
-				1AED54A11BB2F529004F6E8F /* ViewController.xib */,
+				5F88B90F1BB6B67700EF50C4 /* MainViewController.h */,
+				5F88B9101BB6B67700EF50C4 /* MainViewController.m */,
+				5F88B9121BB6B68E00EF50C4 /* MainViewController.xib */,
+				1AED549F1BB2F529004F6E8F /* ArticleViewController.h */,
+				1AED54A01BB2F529004F6E8F /* ArticleViewController.m */,
+				1AED54A11BB2F529004F6E8F /* ArticleViewController.xib */,
 				1AED54A71BB3E696004F6E8F /* FavouritesViewController.h */,
 				1AED54A81BB3E696004F6E8F /* FavouritesViewController.m */,
 				1AED54A91BB3E696004F6E8F /* FavouritesViewController.xib */,
@@ -187,7 +195,8 @@
 			files = (
 				1AED54AB1BB3E696004F6E8F /* FavouritesViewController.xib in Resources */,
 				1AED54951BB2EDFA004F6E8F /* LaunchScreen.storyboard in Resources */,
-				1AED54A31BB2F529004F6E8F /* ViewController.xib in Resources */,
+				5F88B9131BB6B68E00EF50C4 /* MainViewController.xib in Resources */,
+				1AED54A31BB2F529004F6E8F /* ArticleViewController.xib in Resources */,
 				1AED54921BB2EDFA004F6E8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,8 +244,9 @@
 				1AED54A61BB30DE4004F6E8F /* Article.m in Sources */,
 				5F88B90B1BB6AFAD00EF50C4 /* AppConfig.m in Sources */,
 				1AED549E1BB2EE48004F6E8F /* APIController.m in Sources */,
+				5F88B9111BB6B67700EF50C4 /* MainViewController.m in Sources */,
 				1AED548A1BB2EDFA004F6E8F /* AppDelegate.m in Sources */,
-				1AED54A21BB2F529004F6E8F /* ViewController.m in Sources */,
+				1AED54A21BB2F529004F6E8F /* ArticleViewController.m in Sources */,
 				1AED54AA1BB3E696004F6E8F /* FavouritesViewController.m in Sources */,
 				1AED54871BB2EDFA004F6E8F /* main.m in Sources */,
 			);

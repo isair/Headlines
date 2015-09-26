@@ -1,15 +1,21 @@
 PODS:
   - ISO8601 (0.3.0)
+  - Masonry (0.6.3)
+  - Reachability (3.2)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
   - ISO8601
+  - Masonry
+  - Reachability
   - SDWebImage
 
 SPEC CHECKSUMS:
   ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.38.2

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ArticleViewController.h
 //  Headlines
 //
 //  Created by Baldrick
@@ -7,9 +7,14 @@
 //
 
 @import UIKit;
+#import "Article.h"
 
-@interface ViewController : UIViewController
+@interface ArticleViewController : UIViewController
 
+@property (assign, nonatomic) NSInteger articleIndex;
+@property (copy, nonatomic) Article *article;
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *headlineLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;

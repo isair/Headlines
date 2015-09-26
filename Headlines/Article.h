@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface Article : NSObject
+@interface Article : NSObject <NSCopying>
 
 @property (copy, nonatomic) NSString *headline;
 @property (copy, nonatomic) NSString *body;

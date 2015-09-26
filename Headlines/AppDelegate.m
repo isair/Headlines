@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppConfig.h"
-#import "ViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     [UINavigationBar appearance].tintColor = AppConfig.primaryColor;
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[ViewController alloc] init];
+    self.window.rootViewController = [[MainViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;
