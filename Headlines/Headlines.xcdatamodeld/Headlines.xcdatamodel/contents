@@ -6,8 +6,9 @@
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageUrlString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="publishDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="webUrlString" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Article" positionX="-54" positionY="-9" width="128" height="118"/>
+        <element name="Article" positionX="-54" positionY="-9" width="128" height="133"/>
     </elements>
 </model>

@@ -18,9 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, copy, nonatomic) NSString *body;
 @property (nullable, copy, nonatomic) NSDate *publishDate;
 @property (nullable, copy, nonatomic) NSString *imageUrlString;
+@property (nullable, copy, nonatomic) NSString *webUrlString;
 
 - (void)setImageUrl:(NSURL *)imageUrl;
 - (NSURL *)imageUrl;
+
+- (void)setWebUrl:(NSURL *)webUrl;
+- (NSURL *)webUrl;
 
 @end
 

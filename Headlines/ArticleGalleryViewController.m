@@ -111,6 +111,13 @@
     }
 }
 
+- (IBAction)actionButtonPressed
+{
+    Article *viewedArticle = [self viewedArticle];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[viewedArticle.headline, viewedArticle.webUrl] applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:nil];
+}
+
 - (IBAction)favouritesButtonPressed
 {
     FavouritesViewController *favouritesController = [[FavouritesViewController alloc] init];

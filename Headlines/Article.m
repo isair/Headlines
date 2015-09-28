@@ -16,6 +16,7 @@
 @dynamic body;
 @dynamic publishDate;
 @dynamic imageUrlString;
+@dynamic webUrlString;
 
 - (void)setImageUrl:(NSURL *)imageUrl
 {
@@ -27,6 +28,16 @@
     return [NSURL URLWithString:self.imageUrlString];
 }
 
+- (void)setWebUrl:(NSURL *)webUrl
+{
+    self.webUrlString = webUrl.absoluteString;
+}
+
+- (NSURL *)webUrl
+{
+    return [NSURL URLWithString:self.webUrlString];
+}
+
 - (instancetype)copyWithZone:(NSZone *)zone
 {
     Article *copy = [[self class] MR_createEntityInContext:nil];
@@ -35,6 +46,7 @@
     copy.body = self.body;
     copy.publishDate = self.publishDate;
     copy.imageUrlString = self.imageUrlString;
+    copy.webUrlString = self.webUrlString;
     return copy;
 }
 

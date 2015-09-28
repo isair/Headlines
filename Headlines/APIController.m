@@ -51,6 +51,7 @@ NSString *const kAPIKey = @"enj8pstqu5yat6yesfsdmd39";
                 article.body = [self stringByStrippingTagsFromString:result[@"fields"][@"body"]];
                 article.publishDate = [NSDate dateWithISO8601String:result[@"webPublicationDate"]];
                 article.imageUrl = [self extractUrlFromString:result[@"fields"][@"main"]];
+                article.webUrl = [NSURL URLWithString:result[@"webUrl"]];
                 [array addObject:article];
             }
             
