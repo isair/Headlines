@@ -16,6 +16,15 @@ DEPENDENCIES:
   - Reachability
   - SDWebImage
 
+SPEC REPOS:
+  trunk:
+    - FXBlurView
+    - ISO8601
+    - MagicalRecord
+    - Masonry
+    - Reachability
+    - SDWebImage
+
 SPEC CHECKSUMS:
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
@@ -24,4 +33,6 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 2000b7a23c3dd38d961176e26d43c888308b76ad
+
+COCOAPODS: 1.8.4
